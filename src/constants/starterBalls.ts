@@ -18,6 +18,7 @@ export const starterBalls = [
   'lightning',
   'poison',
   'stone',
+  'time',
   'vampire',
   'wind',
 ] as const satisfies Balls[];

@@ -206,6 +206,39 @@ export const assetMap = {
     laserCutter: dev
       ? '/src/lib/assets/ball_icon_laser_cutter.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_laser_cutter.png',
+    time: dev
+      ? '/src/lib/assets/ball_icon_time.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_time.png',
+    timestop: dev
+      ? '/src/lib/assets/ball_icon_timestop.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_timestop.png',
+    erosion: dev
+      ? '/src/lib/assets/ball_icon_erosion.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_erosion.png',
+    warp: dev
+      ? '/src/lib/assets/ball_icon_warp.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_warp.png',
+    timeBomb: dev
+      ? '/src/lib/assets/ball_icon_time_bomb.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_time_bomb.png',
+    venom: dev
+      ? '/src/lib/assets/ball_icon_venom.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_venom.png',
+    heartSwallower: dev
+      ? '/src/lib/assets/ball_icon_heart_swallower.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_heart_swallower.png',
+    reaper: dev
+      ? '/src/lib/assets/ball_icon_reaper.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_reaper.png',
+    xRay: dev
+      ? '/src/lib/assets/ball_icon_x_ray.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_x_ray.png',
+    banshee: dev
+      ? '/src/lib/assets/ball_icon_banshee.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_banshee.png',
+    sniper: dev
+      ? '/src/lib/assets/ball_icon_sniper.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ball_icon_sniper.png',
   },
   passiveIcons: {
     warHorn: dev

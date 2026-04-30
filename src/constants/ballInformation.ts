@@ -16,6 +16,16 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Passes through the front of enemies, but not the back. Backstabs deal 30% bonus damage.',
   },
+  banishedFlame: {
+    name: 'Banished Flame',
+    description:
+      'Add 1 stack of darkflame on hit for 2 seconds (max 6 stacks). Darkflame deals 1-30 damage per stack per second. When the darkflame goes out, it deals 1-100 to the enemy.',
+  },
+  banshee: {
+    name: 'Banshee',
+    description:
+      'Curses all enemies while on the field when launched. Cursed enemies are dealt 150-300 after being hit 6 times.',
+  },
   berserk: {
     name: 'Berserk',
     description:
@@ -26,6 +36,11 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Instantly kills the first non-boss enemy that it hits, but destroys itself afterwards. Has a 7 second cooldown, before it can be shot again.',
   },
+  bleed: {
+    name: 'Bleed',
+    description:
+      'Inflict two stacks of bleed. Bleeding enemies receive one damage per stack when hit by a ball (Max eight stacks).',
+  },
   blizzard: {
     name: 'Blizzard',
     description: 'Freezes all enemies within a 2 tile radius for 0.8 seconds, dealing 1-50 damage.',
@@ -35,6 +50,58 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Explodes when hitting an enemy, dealing 150-300 damage to nearby enemies. Has a 3 second cooldown before it can be shot again.',
   },
+  brimstone: {
+    name: 'Brimstone',
+    description:
+      'Applies 1 stack of burn and poison every second to all enemies within a 2 tile radius (max 4 stacks). Burn deals 1-4 damage per stack per second and poison deals 2-3 damage per stack per second.',
+  },
+  broodMother: {
+    name: 'Brood Mother',
+    description: 'Has a 25 percent chance of birthing a baby ball each time it hits an enemy.',
+  },
+  burn: {
+    name: 'Burn',
+    description:
+      'Add one stack of burn on hit for three seconds (max three stacks). Burnt units are dealt four to eight damage per stack per second.',
+  },
+  catapult: {
+    name: 'Catapult',
+    description:
+      'Launches 3-5 stone baby balls every 1.5 seconds, which are destroyed after hitting anything.',
+  },
+  cell: {
+    name: 'Cell',
+    description: 'Splits into a clone on hit two times.',
+  },
+  charm: {
+    name: 'Charm',
+    description:
+      'Each hit has a four percent chance of charming the enemy for five seconds. Charmed units walk up the board and attack enemies.',
+  },
+  dark: {
+    name: 'Dark',
+    description:
+      'Deals three times damage but destroys itself after hitting an enemy. Has a three-second cooldown before it can be shot again.',
+  },
+  earthquake: {
+    name: 'Earthquake',
+    description: 'Deals 5-13 damage to nearby units in a 3×3 square.',
+  },
+  eggSac: {
+    name: 'Egg Sac',
+    description:
+      'Explodes into two to four baby balls on hitting an enemy. Has a three-second cooldown before it can be shot again.',
+  },
+  erosion: {
+    name: 'Erosion',
+    description:
+      "Passes through enemies. Deals 3% of enemy's current health as bonus damage on hit.",
+  },
+  fireworks: {
+    name: 'Fireworks',
+    description:
+      'Explodes into 3-6 fireworks. Fireworks target random enemies, dealing 20-30 damage and applying 1 stack of burn. Burnt units are dealt 7-11 damage per stack per second.',
+  },
   flash: {
     name: 'Flash',
     description:
@@ -43,6 +110,11 @@ export const ballInformation: Record<Balls, BallInfo> = {
   flicker: {
     name: 'Flicker',
     description: 'Deals 1-7 damage to every enemy on screen every 1.4 seconds.',
+  },
+  freeze: {
+    name: 'Freeze',
+    description:
+      'Has a four percent chance to freeze enemies for five seconds. Frozen enemies receive 25 percent more damage.',
   },
   freezeRay: {
     name: 'Freeze Ray',
@@ -54,10 +126,19 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Add 1 stack of frostburn on hit for 20 seconds (max 4 stacks). Frostburnt units are dealt 8-12 damage per stack per second and receive 25% more damage from other sources.',
   },
+  ghost: {
+    name: 'Ghost',
+    description: 'Passes through enemies.',
+  },
   glacier: {
     name: 'Glacier',
     description:
       'Release glacial spikes over time that deal 15-30 to enemies that touch them and freeze them for 2.0 seconds. This ball and its glacial spikes also deal 6-12 damage to nearby units.',
+  },
+  heartSwallower: {
+    name: 'Heart Swallower',
+    description:
+      'Saps enemies on hit, with a 40% chance of stealing 1 health and reducing their attack damage by 20%. Lifesteal chance only applies once per enemy.',
   },
   hemorrhage: {
     name: 'Hemorrhage',
@@ -78,15 +159,45 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Applies 1 stack of burn every second to all enemies within a 2 tile radius. Burn lasts for 6 seconds, dealing 3-7 damage per stack per second.',
   },
+  iron: {
+    name: 'Iron',
+    description: 'Deals double damage but moves 40 percent slower.',
+  },
+  landslide: {
+    name: 'Landslide',
+    description:
+      'Creates a landslide and destroys self upon hitting an enemy. The landslide lasts for 5 seconds and deals 20-30 damage per second to enemies within a 2 tile radius.',
+  },
   laserBeam: {
     name: 'Laser Beam',
     description:
       'Emit a laser beam on hit that deals 30-42 damage and blinds enemies for 8 seconds.',
   },
+  laserCutter: {
+    name: 'Laser Cutter',
+    description: 'Constantly emits a laser in front of it, which deals 100-150 damage per second.',
+  },
+  laserHorizontal: {
+    name: 'Laser (Horizontal)',
+    description: 'Deals 9-18 damage to all enemies in the same row.',
+  },
+  laserVertical: {
+    name: 'Laser (Vertical)',
+    description: 'Deals 9-18 damage to all enemies in the same column.',
+  },
   leech: {
     name: 'Leech',
     description:
       'Attaches up to 1 leech onto enemies it hits, which adds 2 stacks of bleed per second (Max 24 stacks).',
+  },
+  light: {
+    name: 'Light',
+    description:
+      'Blinds enemies on hit for three seconds. Blinded units have a hard time detecting you and have a 50 percent chance of missing when they attack.',
+  },
+  lightning: {
+    name: 'Lightning',
+    description: 'Deals 1-20 damage to up to 3 nearby enemies.',
   },
   lightningRod: {
     name: 'Lightning Rod',
@@ -118,6 +229,11 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Explodes into 3-6 mosquitos. Mosquitos attack random enemies, dealing 80-120 damage each. If a mosquito kills an enemy, they steal 1 health.',
   },
+  nosferatu: {
+    name: 'Nosferatu',
+    description:
+      'Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing 132-176 damage on hit, turning into a Vampire Lord.',
+  },
   noxious: {
     name: 'Noxious',
     description:
@@ -138,10 +254,19 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Curse enemies on hit. Cursed enemies are dealt 100-200 damage after being hit 5 times.',
   },
+  poison: {
+    name: 'Poison',
+    description:
+      'Applies one stack of poison on hit (max 5 stacks). Poison lasts for six seconds and each stack deals one to four damage per second.',
+  },
   radiationBeam: {
     name: 'Radiation Beam',
     description:
       'Emit a radiation beam on hit that deals 24-48 damage and applies 1 stack of radiation (max 5 stacks). Radiation lasts for 15 seconds and cause enemies to receive 10% more damage from all sources per stack.',
+  },
+  reaper: {
+    name: 'Reaper',
+    description: 'Has a 10% chance to kill enemies on impact, healing you for 5 health.',
   },
   sacrifice: {
     name: 'Sacrifice',
@@ -163,6 +288,11 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Shoots 3-7 iron baby balls after hitting a wall. Iron baby balls move at 200% speed but are destroyed upon hitting anything.',
   },
+  sniper: {
+    name: 'Sniper',
+    description:
+      'Pierces enemies and shoots 3-7 sniper baby balls after hitting a wall. Sniper baby balls pierce enemies but are destroyed upon hitting a wall.',
+  },
   soulSucker: {
     name: 'Soul Sucker',
     description:
@@ -172,14 +302,19 @@ export const ballInformation: Record<Balls, BallInfo> = {
     name: 'Spider Queen',
     description: 'Has a 25% chance of birthing an Egg Sac each time it hits an enemy.',
   },
-  storm: {
-    name: 'Storm',
-    description: 'Emits lightning to strike nearby enemies every second, dealing 1-40 damage.',
+  steel: {
+    name: 'Steel',
+    description:
+      'Initially deals double damage but moves 50% slower. Damage increases by 10% each time it hits an enemy (max 300%).',
   },
   stone: {
     name: 'Stone',
     description:
       'Initially deals 300% damage. Damage erodes by 40% each time hitting an enemy (minimum 50%).',
+  },
+  storm: {
+    name: 'Storm',
+    description: 'Emits lightning to strike nearby enemies every second, dealing 1-40 damage.',
   },
   succubus: {
     name: 'Succubus',
@@ -196,10 +331,34 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30 damage, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units.',
   },
+  time: {
+    name: 'Time',
+    description:
+      'Explodes into a time snare upon hitting an enemy, which stays on the field for 20 seconds and freezes enemies inside it.',
+  },
+  timeBomb: {
+    name: 'Time Bomb',
+    description:
+      'Throws a time bomb every few seconds, which explodes after a delay, dealing 80-120 damage to nearby enemies.',
+  },
+  timestop: {
+    name: 'Timestop',
+    description:
+      'Freezes everything on the field for 5.0 seconds but destroys itself after hitting an enemy. Has a 30 second cooldown before it can be shot again.',
+  },
+  vampire: {
+    name: 'Vampire',
+    description: 'Each hit has a 4.5 percent chance of healing one health.',
+  },
   vampireLord: {
     name: 'Vampire Lord',
     description:
       'Each hit inflicts 3 stacks of bleed. Heals 1 health and consumes all stacks when hitting an enemy with at least 10 stacks of bleed.',
+  },
+  venom: {
+    name: 'Venom',
+    description:
+      'Applies 1 stack of venom on hit (max 8 stacks). Each stack deal 3-6 damage per second and slows down enemies.',
   },
   virus: {
     name: 'Virus',
@@ -211,128 +370,22 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Explodes into 2-3 egg sacs on hitting an enemy. Has a 3 second cooldown before it can be shot again.',
   },
-  wraith: {
-    name: 'Wraith',
-    description: 'Freezes any enemy it passes through for 0.8 seconds.',
-  },
-  landslide: {
-    name: 'Landslide',
-    description:
-      'Creates a landslide and destroys self upon hitting an enemy. The landslide lasts for 5 seconds and deals 20-30 damage per second to enemies within a 2 tile radius.',
-  },
-  steel: {
-    name: 'Steel',
-    description:
-      'Initially deals double damage but moves 50% slower. Damage increases by 10% each time it hits an enemy (max 300%).',
-  },
-  catapult: {
-    name: 'Catapult',
-    description:
-      'Launches 3-5 stone baby balls every 1.5 seconds, which are destroyed after hitting anything.',
-  },
-  brimstone: {
-    name: 'Brimstone',
-    description:
-      'Applies 1 stack of burn and poison every second to all enemies within a 2 tile radius (max 4 stacks). Burn deals 1-4 damage per stack per second and poison deals 2-3 damage per stack per second.',
-  },
-  banishedFlame: {
-    name: 'Banished Flame',
-    description:
-      'Add 1 stack of darkflame on hit for 2 seconds (max 6 stacks). Darkflame deals 1-30 damage per stack per second. When the darkflame goes out, it deals 1-100 to the enemy.',
-  },
-  fireworks: {
-    name: 'Fireworks',
-    description:
-      'Explodes into 3-6 fireworks. Fireworks target random enemies, dealing 20-30 damage and applying 1 stack of burn. Burnt units are dealt 7-11 damage per stack per second.',
-  },
-  laserCutter: {
-    name: 'Laser Cutter',
-    description: 'Constantly emits a laser in front of it, which deals 100-150 damage per second.',
-  },
-  nosferatu: {
-    name: 'Nosferatu',
-    description:
-      'Spawns a vampire bat each bounce. Vampire bats fly towards a random enemy, dealing 132-176 damage on hit, turning into a Vampire Lord.',
-  },
-  bleed: {
-    name: 'Bleed',
-    description:
-      'Inflict two stacks of bleed. Bleeding enemies receive one damage per stack when hit by a ball (Max eight stacks).',
-  },
-  broodMother: {
-    name: 'Brood Mother',
-    description: 'Has a 25 percent chance of birthing a baby ball each time it hits an enemy.',
-  },
-  burn: {
-    name: 'Burn',
-    description:
-      'Add one stack of burn on hit for three seconds (max three stacks). Burnt units are dealt four to eight damage per stack per second.',
-  },
-  cell: {
-    name: 'Cell',
-    description: 'Splits into a clone on hit two times.',
-  },
-  charm: {
-    name: 'Charm',
-    description:
-      'Each hit has a four percent chance of charming the enemy for five seconds. Charmed units walk up the board and attack enemies.',
-  },
-  dark: {
-    name: 'Dark',
-    description:
-      'Deals three times damage but destroys itself after hitting an enemy. Has a three-second cooldown before it can be shot again.',
-  },
-  earthquake: {
-    name: 'Earthquake',
-    description: 'Deals 5-13 damage to nearby units in a 3×3 square.',
-  },
-  eggSac: {
-    name: 'Egg Sac',
-    description:
-      'Explodes into two to four baby balls on hitting an enemy. Has a three-second cooldown before it can be shot again.',
-  },
-  freeze: {
-    name: 'Freeze',
-    description:
-      'Has a four percent chance to freeze enemies for five seconds. Frozen enemies receive 25 percent more damage.',
-  },
-  ghost: {
-    name: 'Ghost',
-    description: 'Passes through enemies.',
-  },
-  iron: {
-    name: 'Iron',
-    description: 'Deals double damage but moves 40 percent slower.',
-  },
-  laserHorizontal: {
-    name: 'Laser (Horizontal)',
-    description: 'Deals 9-18 damage to all enemies in the same row.',
-  },
-  laserVertical: {
-    name: 'Laser (Vertical)',
-    description: 'Deals 9-18 damage to all enemies in the same column.',
-  },
-  light: {
-    name: 'Light',
-    description:
-      'Blinds enemies on hit for three seconds. Blinded units have a hard time detecting you and have a 50 percent chance of missing when they attack.',
-  },
-  lightning: {
-    name: 'Lightning',
-    description: 'Deals 1-20 damage to up to 3 nearby enemies.',
-  },
-  poison: {
-    name: 'Poison',
-    description:
-      'Applies one stack of poison on hit (max 5 stacks). Poison lasts for six seconds and each stack deals one to four damage per second.',
-  },
-  vampire: {
-    name: 'Vampire',
-    description: 'Each hit has a 4.5 percent chance of healing one health.',
+  warp: {
+    name: 'Warp',
+    description: 'After each hit, warps to a random spot on the field and speeds up by 5%.',
   },
   wind: {
     name: 'Wind',
     description:
       'Passes through enemies and slows them down by 30 percent for five seconds, but deals 25 percent less damage.',
+  },
+  wraith: {
+    name: 'Wraith',
+    description: 'Freezes any enemy it passes through for 0.8 seconds.',
+  },
+  xRay: {
+    name: 'X Ray',
+    description:
+      'Emits an X-shaped laser on hit, which deals 50-75 damage to enemies and applies 1 stack of radiation (max 5 stacks). Radiation causes enemies to receive 10% more damage from all sources per stack.',
   },
 };
