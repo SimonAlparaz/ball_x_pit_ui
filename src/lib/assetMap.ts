@@ -331,6 +331,33 @@ export const assetMap = {
     grotesqueArtillery: dev
       ? '/src/lib/assets/grotesqueArtillery.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/grotesqueArtillery.png',
+    swordBreaker: dev
+      ? '/src/lib/assets/swordBreaker.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/swordBreaker.png',
+    arrowOfFate: dev
+      ? '/src/lib/assets/arrowOfFate.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/arrowOfFate.png',
+    argentStopwatch: dev
+      ? '/src/lib/assets/argentStopwatch.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/argentStopwatch.png',
+    fullMetalRapier: dev
+      ? '/src/lib/assets/fullMetalRapier.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/fullMetalRapier.png',
+    handMirror: dev
+      ? '/src/lib/assets/handMirror.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/handMirror.png',
+    loversQuiver: dev
+      ? '/src/lib/assets/loversQuiver.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/loversQuiver.png',
+    silverBullet: dev
+      ? '/src/lib/assets/silverBullet.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/silverBullet.png',
+    hourglass: dev
+      ? '/src/lib/assets/hourglass.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/hourglass.png',
+    ironOnesie: dev
+      ? '/src/lib/assets/ironOnesie.png'
+      : 'https://res.cloudinary.com/dnmknegr2/image/upload/v0000000000/ball_x_pit/ball_icons/ironOnesie.png',
   },
 };
 

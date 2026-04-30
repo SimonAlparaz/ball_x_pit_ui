@@ -10,6 +10,15 @@ export type PassiveInfo = {
 };
 
 export const passiveInformation: Record<Passives, PassiveInfo> = {
+  argentStopwatch: {
+    name: 'Argent Stopwatch',
+    description:
+      'Balls deal 200% damage, but damage decays by 20% each time they bounce (minimum 100%).',
+  },
+  arrowOfFate: {
+    name: 'Arrow of Fate',
+    description: 'Projectiles no longer hurt you. Shoot 1-2 baby balls when hit by a projectile.',
+  },
   babyRattle: {
     name: 'Baby Rattle',
     description: 'Gain 1.5x baby balls, but your aim becomes scattered.',
@@ -39,6 +48,29 @@ export const passiveInformation: Record<Passives, PassiveInfo> = {
   fleetFeet: {
     name: 'Fleet Feet',
     description: 'Increase movement speed by 10% and move at full speed while shooting.',
+  },
+  fullMetalRapier: {
+    name: 'Full Metal Rapier',
+    description: 'Balls deal 1% more damage for each baby ball and enemy on the field.',
+  },
+  handMirror: {
+    name: 'Hand Mirror',
+  },
+  hourglass: {
+    name: 'Hourglass',
+  },
+  ironOnesie: {
+    name: 'Iron Onesie',
+  },
+  loversQuiver: {
+    name: "Lover's Quiver",
+  },
+  silverBullet: {
+    name: 'Silver Bullet',
+  },
+  swordBreaker: {
+    name: 'Sword Breaker',
+    description: 'Balls deal 40% less damage, but gain 1% damage for each enemy on the field.',
   },
   warHorn: {
     name: 'War Horn',
