@@ -55,18 +55,25 @@ export const passiveInformation: Record<Passives, PassiveInfo> = {
   },
   handMirror: {
     name: 'Hand Mirror',
+    description:
+      'Projectiles have a 50% chance to reflect upon hitting you, dealing 20-40 damage if they hit an enemy.',
   },
   hourglass: {
     name: 'Hourglass',
+    description:
+      'Balls deal 150% damage, but damage decays by 30% each time they bounce (minimum 50%).',
   },
   ironOnesie: {
     name: 'Iron Onesie',
+    description: 'Balls deal 0.5% more damage for each baby ball on the field.',
   },
   loversQuiver: {
     name: "Lover's Quiver",
+    description: 'Projectiles have a 40% chance to heal you for 1 health instead of hurting you.',
   },
   silverBullet: {
     name: 'Silver Bullet',
+    description: 'Balls deal 20% bonus damage until they hit a wall.',
   },
   swordBreaker: {
     name: 'Sword Breaker',
