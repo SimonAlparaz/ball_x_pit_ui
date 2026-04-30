@@ -3,10 +3,16 @@ import { ballInformation } from './ballInformation.ts';
 
 export const advancedEvolutions: [Balls, Balls, Balls][] = [
   ['bomb', 'poison', 'nuclearBomb'],
+  ['bomb', 'time', 'timeBomb'],
   ['incubus', 'succubus', 'satan'],
   ['dark', 'sun', 'blackHole'],
+  ['sun', 'time', 'blackHole'],
   ['laserHorizontal', 'steel', 'laserCutter'],
   ['laserVertical', 'steel', 'laserCutter'],
+  ['heartSwallower', 'soulSucker', 'reaper'],
+  ['laserBeam', 'holyLaser', 'xRay'],
+  ['wraith', 'phantom', 'banshee'],
+  ['darkAssassin', 'shotgun', 'sniper'],
 ];
 
 export const multipleAdvancedEvolutions: [Balls, Balls, Balls, Balls][] = [
@@ -17,6 +23,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['bleed', 'broodMother', 'leech'],
   ['bleed', 'charm', 'berserk'],
   ['bleed', 'dark', 'sacrifice'],
+  ['bleed', 'ghost', 'heartSwallower'],
   ['bleed', 'iron', 'hemorrhage'],
   ['bleed', 'poison', 'virus'],
   ['bleed', 'vampire', 'vampireLord'],
@@ -32,6 +39,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['burn', 'light', 'sun'],
   ['burn', 'poison', 'brimstone'],
   ['burn', 'stone', 'brimstone'],
+  ['burn', 'time', 'inferno'],
   ['burn', 'wind', 'inferno'],
   ['cell', 'earthquake', 'overgrowth'],
   ['cell', 'eggSac', 'voluptuousEggSac'],
@@ -41,6 +49,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['charm', 'dark', 'incubus'],
   ['charm', 'light', 'lovestruck'],
   ['charm', 'lightning', 'lovestruck'],
+  ['charm', 'time', 'lovestruck'],
   ['charm', 'vampire', 'succubus'],
   ['dark', 'ghost', 'phantom'],
   ['dark', 'iron', 'darkAssassin'],
@@ -56,6 +65,8 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['freeze', 'laserHorizontal', 'freezeRay'],
   ['freeze', 'laserVertical', 'freezeRay'],
   ['freeze', 'lightning', 'blizzard'],
+  ['freeze', 'poison', 'venom'],
+  ['freeze', 'time', 'timestop'],
   ['freeze', 'wind', 'blizzard'],
   ['ghost', 'iron', 'darkAssassin'],
   ['ghost', 'poison', 'virus'],
@@ -67,6 +78,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['laserVertical', 'poison', 'radiationBeam'],
   ['laserVertical', 'light', 'laserBeam'],
   ['light', 'lightning', 'flash'],
+  ['light', 'time', 'warp'],
   ['lightning', 'wind', 'storm'],
   ['poison', 'wind', 'noxious'],
   ['stone', 'earthquake', 'landslide'],
@@ -74,6 +86,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['stone', 'freeze', 'glacier'],
   ['stone', 'iron', 'steel'],
   ['stone', 'wind', 'sandstorm'],
+  ['wind', 'time', 'erosion'],
 ];
 
 export function getEvolutionRecipes(ball: Balls): string | null {

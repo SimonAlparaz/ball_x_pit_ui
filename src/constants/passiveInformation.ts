@@ -10,6 +10,15 @@ export type PassiveInfo = {
 };
 
 export const passiveInformation: Record<Passives, PassiveInfo> = {
+  argentStopwatch: {
+    name: 'Argent Stopwatch',
+    description:
+      'Balls deal 200% damage, but damage decays by 20% each time they bounce (minimum 100%).',
+  },
+  arrowOfFate: {
+    name: 'Arrow of Fate',
+    description: 'Projectiles no longer hurt you. Shoot 1-2 baby balls when hit by a projectile.',
+  },
   babyRattle: {
     name: 'Baby Rattle',
     description: 'Gain 1.5x baby balls, but your aim becomes scattered.',
@@ -39,6 +48,36 @@ export const passiveInformation: Record<Passives, PassiveInfo> = {
   fleetFeet: {
     name: 'Fleet Feet',
     description: 'Increase movement speed by 10% and move at full speed while shooting.',
+  },
+  fullMetalRapier: {
+    name: 'Full Metal Rapier',
+    description: 'Balls deal 1% more damage for each baby ball and enemy on the field.',
+  },
+  handMirror: {
+    name: 'Hand Mirror',
+    description:
+      'Projectiles have a 50% chance to reflect upon hitting you, dealing 20-40 damage if they hit an enemy.',
+  },
+  hourglass: {
+    name: 'Hourglass',
+    description:
+      'Balls deal 150% damage, but damage decays by 30% each time they bounce (minimum 50%).',
+  },
+  ironOnesie: {
+    name: 'Iron Onesie',
+    description: 'Balls deal 0.5% more damage for each baby ball on the field.',
+  },
+  loversQuiver: {
+    name: "Lover's Quiver",
+    description: 'Projectiles have a 40% chance to heal you for 1 health instead of hurting you.',
+  },
+  silverBullet: {
+    name: 'Silver Bullet',
+    description: 'Balls deal 20% bonus damage until they hit a wall.',
+  },
+  swordBreaker: {
+    name: 'Sword Breaker',
+    description: 'Balls deal 40% less damage, but gain 1% damage for each enemy on the field.',
   },
   warHorn: {
     name: 'War Horn',

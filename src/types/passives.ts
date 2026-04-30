@@ -2,6 +2,8 @@ import type { starterPassives } from '../constants/starterPassives.ts';
 
 export type Passives =
   | 'babyRattle'
+  | 'argentStopwatch'
+  | 'arrowOfFate'
   | 'breastplate'
   | 'reachersSpear'
   | 'etherealCloak'
@@ -12,6 +14,13 @@ export type Passives =
   | 'wretchedOnion'
   | 'deadeyesAmulet'
   | 'ghostlyCorset'
+  | 'fullMetalRapier'
+  | 'handMirror'
+  | 'hourglass'
+  | 'ironOnesie'
+  | 'loversQuiver'
+  | 'silverBullet'
+  | 'swordBreaker'
   | 'vampiricSword'
   | 'spikedCollar'
   | 'radiantFeather'
