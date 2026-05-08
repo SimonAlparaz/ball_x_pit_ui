@@ -24,9 +24,9 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-  /* Ensure touch scrolling works in both directions */
-  touch-action: pan-x;
-  /* Prevent scroll chaining that might interfere with left scrolling */
+  /* Preserve horizontal scrolling while allowing vertical page scroll gestures. */
+  touch-action: pan-x pan-y;
+  /* Prevent horizontal scroll chaining that might interfere with left scrolling */
   overscroll-behavior-x: contain;
 }
 

@@ -16,7 +16,7 @@
 </script>
 
 <div
-  class="w-full overflow-x-auto touch-pan-x"
+  class="w-full overflow-x-auto"
   style="-webkit-overflow-scrolling: touch; scroll-behavior: smooth;"
 >
   <div
