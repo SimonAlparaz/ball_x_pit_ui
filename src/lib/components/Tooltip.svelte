@@ -1,13 +1,28 @@
 <script lang="ts">
-  const { children, tooltip, text, delay = 300 } = $props();
+  import type { Snippet } from 'svelte';
+
+  type TooltipPosition = {
+    x: number;
+    y: number;
+    placement: 'top' | 'bottom';
+  };
+
+  type Props = {
+    children: Snippet;
+    tooltip?: Snippet;
+    text?: string;
+    delay?: number;
+  };
+
+  const { children, tooltip, text, delay = 300 }: Props = $props();
 
   let showTooltip = $state(false);
-  let timeoutId = $state(null);
-  let triggerElement = $state(null);
-  let tooltipElement = $state(null);
-  let tooltipPosition = $state({ x: 0, y: 0, placement: 'top' });
+  let timeoutId = $state<ReturnType<typeof setTimeout> | null>(null);
+  let triggerElement = $state<HTMLDivElement | null>(null);
+  let tooltipElement = $state<HTMLDivElement | null>(null);
+  let tooltipPosition = $state<TooltipPosition>({ x: 0, y: 0, placement: 'top' });
 
-  function handleMouseEnter(event) {
+  function handleMouseEnter(event: MouseEvent & { currentTarget: HTMLDivElement }) {
     triggerElement = event.currentTarget;
     timeoutId = setTimeout(() => {
       if (triggerElement) {
@@ -36,7 +51,7 @@
 
     let x = triggerRect.left + triggerRect.width / 2;
     let y = triggerRect.top;
-    let placement = 'top';
+    let placement: TooltipPosition['placement'] = 'top';
 
     // Check if tooltip would go off the right edge
     if (x + tooltipWidth / 2 > viewportWidth - 16) {
