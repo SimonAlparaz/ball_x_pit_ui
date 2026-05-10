@@ -23,7 +23,6 @@
   const cellClasses = $derived(
     [
       'p-0.5',
-      'w-13 h-13',
       'flex items-center justify-center',
       'transition-all duration-200',
       'select-none',
@@ -35,6 +34,8 @@
       .filter(Boolean)
       .join(' ')
   );
+  const cellStyle =
+    'width: var(--grid-cell-size, 3.25rem); height: var(--grid-cell-size, 3.25rem);';
 
   const tooltip = $derived(
     ballKey && ballInformation[ballKey]
@@ -45,7 +46,7 @@
 
 {#if ballKey && ballInformation[ballKey]}
   <Tooltip delay={100}>
-    <div class={cellClasses} role="gridcell">
+    <div class={cellClasses} style={cellStyle} role="gridcell">
       {@render children()}
     </div>
     {#snippet tooltip()}
@@ -68,7 +69,7 @@
   </Tooltip>
 {:else if passiveKey && passiveInformation[passiveKey]}
   <Tooltip delay={100}>
-    <div class={cellClasses} role="gridcell">
+    <div class={cellClasses} style={cellStyle} role="gridcell">
       {@render children()}
     </div>
     {#snippet tooltip()}
@@ -81,7 +82,7 @@
     {/snippet}
   </Tooltip>
 {:else}
-  <div class={cellClasses} role="gridcell">
+  <div class={cellClasses} style={cellStyle} role="gridcell">
     {@render children()}
   </div>
 {/if}
