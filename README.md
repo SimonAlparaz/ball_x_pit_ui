@@ -19,6 +19,12 @@ See [ASSETS.md](./ASSETS.md) for full copyright and attribution information.
 - Detailed tooltips with ball descriptions
 - Responsive design
 
+## Credits
+
+Original project created by [jackietieu](https://github.com/jackietieu/ball_x_pit_ui).
+
+Upstream: https://github.com/jackietieu/ball_x_pit_ui
+
 ## Developing
 
 Once you've installed dependencies with `npm install`, start a development server:

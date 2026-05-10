@@ -12,7 +12,7 @@
 
   <div class="flex justify-center">
     <a
-      href="https://github.com/jackietieu/ball_x_pit_ui"
+      href="https://github.com/SimonAlparaz/ball_x_pit_ui"
       target="_blank"
       rel="noopener noreferrer"
       class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200"
