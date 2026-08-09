@@ -53,6 +53,7 @@
 
 <main class="flex flex-col max-w-7xl mx-auto">
   <header class="text-center px-4 mb-4">
+    <h1 class="sr-only">BALL x PIT Evolution Chart</h1>
     <img
       src="https://influencers.devolverdigital.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdevolver-digital%2Fimage%2Fupload%2Fv1748283936%2Fmothership-payload%2F1748283936628_LOGO_FINAL_CLEAN_WHITE-1_pzxy9y.png&w=1200&q=75"
       alt="BALL x PIT Logo"
