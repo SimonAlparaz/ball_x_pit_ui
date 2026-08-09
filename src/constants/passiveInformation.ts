@@ -179,4 +179,55 @@ export const passiveInformation: Record<Passives, PassiveInfo> = {
     description:
       'Balls go through enemies and deal 20% bonus damage when hitting them from the side.',
   },
+  ardentTire: {
+    name: 'Ardent Tire',
+    description: 'Each bounce increases ball speed by 10% and damage by 5%.',
+  },
+  ingloriousHammer: {
+    name: 'Inglorious Hammer',
+    description:
+      'When balls hit a wall or the back of the field, they hit a random enemy with 50% bonus damage.',
+  },
+  remoteDetonator: {
+    name: 'Remote Detonator',
+    description: 'Enemies spawn a level 1 bomb ball upon dying.',
+  },
+  windweaver: {
+    name: 'Windweaver',
+    description: 'Shoot a level 1 wind ball every time you pick up a gem.',
+  },
+  bottledTornado: {
+    name: 'Bottled Tornado',
+    description:
+      'When you catch a special ball, automatically shoot 1-3 new baby balls in random directions.',
+  },
+  magnet: {
+    name: 'Magnet',
+    description: 'Increase range at which you pick up items and catch balls by 1.0 tiles.',
+  },
+  platinumDumbbell: {
+    name: 'Platinum Dumbbell',
+    description: 'Balls deal 12% bonus damage until they hit the back of the field.',
+  },
+  pressureValve: {
+    name: 'Pressure Valve',
+    description: 'Enemies explode on death, dealing 20-30 damage to adjacent enemies.',
+  },
+  rubberHeadband: {
+    name: 'Rubber Headband',
+    description: 'Balls start off at 70% speed but increase by 20% each bounce (max 200%).',
+  },
+  slingshot: {
+    name: 'Slingshot',
+    description: '25% chance to launch a baby ball when you pick up a gem.',
+  },
+  upturnedHatchet: {
+    name: 'Upturned Hatchet',
+    description:
+      'Balls deal 80% more damage after hitting the back of the field, otherwise damage is reduced by 20%.',
+  },
+  wagonWheel: {
+    name: 'Wagon Wheel',
+    description: 'Each time a ball hits a wall, it deals 30% extra damage on the next hit.',
+  },
 };

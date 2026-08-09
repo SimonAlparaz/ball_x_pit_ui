@@ -29,4 +29,12 @@ export const starterPassives = [
   'ironOnesie',
   'wretchedOnion',
   'ghostlyCorset',
+  'bottledTornado',
+  'magnet',
+  'platinumDumbbell',
+  'pressureValve',
+  'rubberHeadband',
+  'slingshot',
+  'upturnedHatchet',
+  'wagonWheel',
 ] as const satisfies Passives[];

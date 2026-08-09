@@ -2,6 +2,7 @@ import type { Balls, StarterBalls } from '../types/balls.ts';
 import { ballInformation } from './ballInformation.ts';
 
 export const advancedEvolutions: [Balls, Balls, Balls][] = [
+  ['inferno', 'storm', 'armageddon'],
   ['bomb', 'poison', 'nuclearBomb'],
   ['bomb', 'time', 'timeBomb'],
   ['incubus', 'succubus', 'satan'],
@@ -13,10 +14,13 @@ export const advancedEvolutions: [Balls, Balls, Balls][] = [
   ['laserBeam', 'holyLaser', 'xRay'],
   ['wraith', 'phantom', 'banshee'],
   ['darkAssassin', 'shotgun', 'sniper'],
+  ['mosquitoKing', 'mosquitoSwarm', 'mosquitoKingdom'],
+  ['radiationBeam', 'flesh', 'tumor'],
 ];
 
-export const multipleAdvancedEvolutions: [Balls, Balls, Balls, Balls][] = [
+export const multipleAdvancedEvolutions: [Balls, Balls, Balls, ...Balls[]][] = [
   ['vampireLord', 'mosquitoKing', 'spiderQueen', 'nosferatu'],
+  ['burn', 'wind', 'freeze', 'earthquake', 'elemental'],
 ];
 
 export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
@@ -30,6 +34,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['broodMother', 'cell', 'maggot'],
   ['broodMother', 'eggSac', 'spiderQueen'],
   ['broodMother', 'vampire', 'mosquitoKing'],
+  ['broodMother', 'flesh', 'fleshMound'],
   ['burn', 'charm', 'berserk'],
   ['burn', 'earthquake', 'magma'],
   ['burn', 'dark', 'banishedFlame'],
@@ -46,6 +51,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['cell', 'laserHorizontal', 'radiationBeam'],
   ['cell', 'laserVertical', 'radiationBeam'],
   ['cell', 'poison', 'virus'],
+  ['cell', 'flesh', 'offspring'],
   ['charm', 'dark', 'incubus'],
   ['charm', 'light', 'lovestruck'],
   ['charm', 'lightning', 'lovestruck'],
@@ -59,6 +65,7 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['earthquake', 'freeze', 'glacier'],
   ['earthquake', 'poison', 'swamp'],
   ['earthquake', 'wind', 'sandstorm'],
+  ['earthquake', 'iron', 'drill'],
   ['eggSac', 'iron', 'shotgun'],
   ['eggSac', 'vampire', 'mosquitoSwarm'],
   ['freeze', 'ghost', 'wraith'],
@@ -80,19 +87,27 @@ export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['light', 'lightning', 'flash'],
   ['light', 'time', 'warp'],
   ['lightning', 'wind', 'storm'],
+  ['lightning', 'broodMother', 'lightningBug'],
   ['poison', 'wind', 'noxious'],
   ['stone', 'earthquake', 'landslide'],
   ['stone', 'eggSac', 'catapult'],
   ['stone', 'freeze', 'glacier'],
   ['stone', 'iron', 'steel'],
   ['stone', 'wind', 'sandstorm'],
+  ['stone', 'flesh', 'petrify'],
+  ['vampire', 'flesh', 'zombie'],
   ['wind', 'time', 'erosion'],
 ];
 
 export function getEvolutionRecipes(ball: Balls): string | null {
-  const matches = [...basicEvolutions, ...advancedEvolutions]
-    .filter(([, , result]) => result === ball)
-    .map(([ball1, ball2]) => `${ballInformation[ball1].name} x ${ballInformation[ball2].name}`);
+  const matches = [...basicEvolutions, ...advancedEvolutions, ...multipleAdvancedEvolutions]
+    .filter((evolution) => evolution.at(-1) === ball)
+    .map((evolution) =>
+      evolution
+        .slice(0, -1)
+        .map((component) => ballInformation[component].name)
+        .join(' x ')
+    );
 
   if (matches.length === 0) return null;
 
@@ -105,17 +120,14 @@ export function getEvolutionRecipes(ball: Balls): string | null {
   const condensed: string[] = [];
 
   for (const match of matches) {
-    const [leftBall, rightBall] = match.split(' x ');
+    const components = match.split(' x ');
 
-    if (isLaser(leftBall) && isLaser(rightBall)) {
+    if (components.filter(isLaser).length > 1) {
       condensed.push(match);
       continue;
     }
 
-    const normLeftBall = isLaser(leftBall) ? normalizeLaser(leftBall) : leftBall;
-    const normRightBall = isLaser(rightBall) ? normalizeLaser(rightBall) : rightBall;
-
-    condensed.push(`${normLeftBall} x ${normRightBall}`);
+    condensed.push(components.map(normalizeLaser).join(' x '));
   }
 
   return [...new Set(condensed)].join(' / ');

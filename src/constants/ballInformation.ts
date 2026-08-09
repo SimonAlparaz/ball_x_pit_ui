@@ -388,4 +388,54 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description:
       'Emits an X-shaped laser on hit, which deals 50-75 damage to enemies and applies 1 stack of radiation (max 5 stacks). Radiation causes enemies to receive 10% more damage from all sources per stack.',
   },
+  armageddon: {
+    name: 'Armageddon',
+    description:
+      'Creates a meteor shower upon hitting an enemy. The meteor shower lasts for 5 seconds and deals 30-50 damage / second to enemies within a 3 tile radius.',
+  },
+  drill: {
+    name: 'Drill',
+    description: 'Pierces enemies and deals 50% bonus damage until reaching the back of the field.',
+  },
+  elemental: {
+    name: 'Elemental',
+    description: 'Applies a random status effect (burn, slow, or freeze) to nearby enemies on hit.',
+  },
+  flesh: {
+    name: 'Flesh',
+    description: 'Speed increases by 25% per bounce.',
+  },
+  fleshMound: {
+    name: 'Flesh Mound',
+    description: 'Emites a fleshy baby ball in a random direction every 1.0 seconds.',
+  },
+  lightningBug: {
+    name: 'Lightning Bug',
+    description:
+      'Spawns a lightning bug each time it hits an enemy. Lightning bugs attack a random enemy, dealing 1-80 damage to up to 3 nearby enemies.',
+  },
+  mosquitoKingdom: {
+    name: 'Mosquito Kingdom',
+    description:
+      'Spawns 1-2 mosquitos each time it hits an enemy. Mosquitos attack a random enemy, dealing 100-150 damage each. If a mosquito kills an enemy, they steal 2 health.',
+  },
+  offspring: {
+    name: 'Offspring',
+    description: 'Splits into a clone on hit 4 times.',
+  },
+  petrify: {
+    name: 'Petrify',
+    description:
+      'Petrifies all enemies within its sightline for 1.5 seconds when first launched, dealing 50-120.',
+  },
+  tumor: {
+    name: 'Tumor',
+    description:
+      'Applies tumor on hit, Enemies with a tumor die after 40 seconds (exept for bosses).',
+  },
+  zombie: {
+    name: 'Zombie',
+    description:
+      'Infects enemies on hit, giving them a 40% chance to turn into a friendly zombie on death.',
+  },
 };

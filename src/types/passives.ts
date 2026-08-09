@@ -41,6 +41,18 @@ export type Passives =
   | 'tormentorsMask'
   | 'wingsOfTheAnointed'
   | 'wretchedOnion'
-  | 'ghostlyCorset';
+  | 'ghostlyCorset'
+  | 'ardentTire'
+  | 'ingloriousHammer'
+  | 'remoteDetonator'
+  | 'windweaver'
+  | 'bottledTornado'
+  | 'magnet'
+  | 'platinumDumbbell'
+  | 'pressureValve'
+  | 'rubberHeadband'
+  | 'slingshot'
+  | 'upturnedHatchet'
+  | 'wagonWheel';
 
 export type StarterPassives = (typeof starterPassives)[number];
