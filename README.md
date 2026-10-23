@@ -27,6 +27,20 @@ Upstream: https://github.com/jackietieu/ball_x_pit_ui
 
 ## Developing
 
+Use the Node.js version pinned in `.nvmrc` (22.23.4). With nvm:
+
+```sh
+nvm install
+nvm use
+```
+
+Node 24.22.1+ and 26.12.1+ are also supported within their respective major versions. Older
+patch releases are rejected during installation because these minimums include the
+[Node2Shell (CVE-2026-111497) security fix](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
+
+Cloudflare Workers Builds reads `.nvmrc`. If you have set a `NODE_VERSION` build variable in
+the Cloudflare dashboard, keep it consistent with the pinned version.
+
 Once you've installed dependencies with `npm install`, start a development server:
 
 ```sh
