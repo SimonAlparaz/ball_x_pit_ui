@@ -1,6 +1,7 @@
 dist/
 node_modules/
 .svelte-kit/
+.vitest/
 build/
 package/
 *.d.ts

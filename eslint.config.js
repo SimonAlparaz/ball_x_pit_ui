@@ -65,6 +65,7 @@ export default [
       'dist/',
       'node_modules/',
       '.svelte-kit/',
+      '.vitest/',
       'build/',
       'package/',
       '.netlify/',
