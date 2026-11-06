@@ -162,8 +162,8 @@
     class="evolution-grid-content grid gap-0 p-4 relative mx-auto"
     style="--grid-cell-size: {cellSize}; grid-template-columns: repeat({gridSize}, var(--grid-cell-size)); width: max-content; overflow: visible;"
   >
-    {#each grid as row}
-      {#each row as cell}
+    {#each grid as row, rowIndex (rowIndex)}
+      {#each row as cell (cell.x)}
         {@const xBall = starterBalls[cell.x - 1]}
         {@const yBall = starterBalls[cell.y - 1]}
         {@const evolution = evolutions[xBall]?.[yBall]?.evolution}

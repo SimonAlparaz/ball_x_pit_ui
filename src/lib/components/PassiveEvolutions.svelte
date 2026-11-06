@@ -14,13 +14,13 @@
   <h2 class="text-xl font-bold mb-6 text-white text-center xl:text-left">Passive Evolutions</h2>
 
   <div class="flex flex-col gap-1 items-center xl:items-start">
-    {#each allPassiveEvolutionsFormatted as evolution}
+    {#each allPassiveEvolutionsFormatted as evolution (evolution)}
       <div class="w-full overflow-x-auto">
         <div
           class="flex items-center gap-2 p-2 rounded-lg justify-center xl:justify-start"
           style="min-width: max-content;"
         >
-          {#each evolution.components as component, index}
+          {#each evolution.components as component, index (index)}
             <GridItem passiveKey={component} x={0} y={0}>
               <GridIcon src={assetMap.passiveIcons[component]} alt={component + ' passive'} />
             </GridItem>

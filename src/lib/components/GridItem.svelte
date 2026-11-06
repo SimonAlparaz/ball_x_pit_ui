@@ -55,7 +55,7 @@
       </div>
       {#if getEvolutionRecipes(ballKey)}
         <div>
-          {#each getEvolutionRecipes(ballKey)?.split('/') as evolutionText}
+          {#each getEvolutionRecipes(ballKey)?.split('/') as evolutionText, index (index)}
             <div class="text-gray-400 mb-1">
               {evolutionText.trim()}
             </div>

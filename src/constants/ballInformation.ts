@@ -1,4 +1,4 @@
-import assetMap from '$lib/assetMap.ts';
+import assetMap from '#lib/assetMap.ts';
 import type { Balls } from '../types/balls.ts';
 
 export const allBalls = Object.keys(assetMap.ballIcons) as Balls[];

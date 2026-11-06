@@ -6,6 +6,7 @@ import svelteParser from 'svelte-eslint-parser';
 
 export default [
   js.configs.recommended,
+  ...svelte.configs.recommended,
   {
     files: ['**/*.{js,ts}'],
     languageOptions: {
@@ -53,9 +54,7 @@ export default [
       svelte,
     },
     rules: {
-      ...svelte.configs.recommended.rules,
       'svelte/no-unused-svelte-ignore': 'off',
-      'svelte/valid-compile': 'off',
       'no-unused-vars': 'off',
       'no-undef': 'off', // Svelte compiler handles this
     },

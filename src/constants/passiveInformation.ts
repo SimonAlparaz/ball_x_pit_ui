@@ -1,4 +1,4 @@
-import assetMap from '$lib/assetMap.ts';
+import assetMap from '#lib/assetMap.ts';
 import type { Balls } from '../types/balls.ts';
 import type { Passives } from '../types/passives.ts';
 

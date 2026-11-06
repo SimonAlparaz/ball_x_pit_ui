@@ -1,8 +1,8 @@
 <script>
-  import NonGridEvolutions from '$lib/components/NonGridEvolutions.svelte';
-  import EvolutionGrid from '$lib/components/EvolutionGrid.svelte';
-  import Footer from '$lib/components/Footer.svelte';
-  import { devLog, env } from '$lib/env.js';
+  import NonGridEvolutions from '#lib/components/NonGridEvolutions.svelte';
+  import EvolutionGrid from '#lib/components/EvolutionGrid.svelte';
+  import Footer from '#lib/components/Footer.svelte';
+  import { devLog, env } from '#lib/env.js';
   import { starterBalls } from '../constants/starterBalls.ts';
 
   // Development logging
@@ -51,7 +51,7 @@
   </div>
 {/if}
 
-<main class="flex flex-col max-w-7xl mx-auto">
+<main class="flex flex-col max-w-[120rem] mx-auto">
   <header class="text-center px-4 mb-4">
     <h1 class="sr-only">BALL x PIT Evolution Chart</h1>
     <img
@@ -67,11 +67,11 @@
   </header>
 
   <div class="flex flex-col xl:flex-row xl:gap-8 xl:items-start xl:justify-center">
-    <section aria-label="Basic Evolution Grid" class="xl:flex-shrink-0">
+    <section aria-label="Basic Evolution Grid" class="min-w-0 xl:flex-1">
       <EvolutionGrid gridSize={starterBalls.length + 1} />
     </section>
 
-    <section aria-label="Advanced Evolutions" class="mb-4 xl:max-w-lg xl:flex-shrink-0">
+    <section aria-label="Advanced Evolutions" class="min-w-0 mb-4 xl:max-w-lg xl:flex-shrink-0">
       <NonGridEvolutions />
     </section>
   </div>
